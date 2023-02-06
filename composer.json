@@ -1,0 +1,24 @@
+{
+    "name": "codepeak/oauth2-fortnox",
+    "description": "A Fortnox provider for league/oauth2-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Lord, Codepeak AB",
+            "email": "robert@codepeak.se"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Codepeak\\OAuth2\\Client\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "league/oauth2-client": "^2.6"
+    },
+    "suggest": {
+        "illuminate/support": "Laravel integration"
+    },
+    "minimum-stability": "dev"
+}
