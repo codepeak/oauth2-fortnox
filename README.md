@@ -17,14 +17,14 @@ composer require codepeak/oauth2-fortnox
 $provider = new \Codepeak\OAuth2\Client\Provider\Fortnox([
     'clientId' => "YOUR_CLIENT_ID",
     'clientSecret' => "YOUR_CLIENT_SECRET",
-    'redirectUri' => "http://your-redirect-uri"
+    'redirectUri' => "https://your.redirect.uri/full/url/path/here"
 ]);
 ```
 
 ### Get authorization URL
 
 ```php
-$authorizationUrl = $provider->getAuthorizationUrl();
+$authorizationUrl = $provider->getAuthorizationUrl(['scope' => ['companyinformation', 'profile']]);
 ```
 
 ### Get the access token
@@ -32,5 +32,13 @@ $authorizationUrl = $provider->getAuthorizationUrl();
 ```php
 $token = $this->provider->getAccessToken("authorizaton_code", [
     'code' => $_GET['code']
+]);
+```
+
+### Refresh access token
+
+```php
+$token = $this->provider->getAccessToken("refresh_token", [
+    'refresh_token' => $refreshToken
 ]);
 ```
