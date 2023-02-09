@@ -1,6 +1,6 @@
 <?php
 
-namespace Codepeak\OAuth2\Client\OptionProvider;
+namespace Codepeak\OAuth2\Fortnox\OptionProvider;
 
 use League\OAuth2\Client\OptionProvider\PostAuthOptionProvider;
 

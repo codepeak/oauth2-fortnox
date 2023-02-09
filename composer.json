@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Codepeak\\OAuth2\\Client\\": "src/"
+            "Codepeak\\OAuth2\\Fortnox\\": "src/"
         }
     },
     "require": {
