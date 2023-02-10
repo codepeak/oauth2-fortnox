@@ -1,8 +1,8 @@
 <?php
 
-namespace Codepeak\OAuth2\Fortnox\Provider;
+namespace Codepeak\OAuth2\Client\Provider;
 
-use Codepeak\OAuth2\Fortnox\OptionProvider\FortnoxOptionProvider;
+use Codepeak\OAuth2\Client\OptionProvider\FortnoxOptionProvider;
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
