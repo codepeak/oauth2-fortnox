@@ -30,7 +30,7 @@ $authorizationUrl = $provider->getAuthorizationUrl(['scope' => ['companyinformat
 ### Get the access token
 
 ```php
-$token = $this->provider->getAccessToken("authorizaton_code", [
+$token = $provider->getAccessToken("authorization_code", [
     'code' => $_GET['code']
 ]);
 ```
@@ -38,7 +38,7 @@ $token = $this->provider->getAccessToken("authorizaton_code", [
 ### Refresh access token
 
 ```php
-$token = $this->provider->getAccessToken("refresh_token", [
+$token = $provider->getAccessToken("refresh_token", [
     'refresh_token' => $refreshToken
 ]);
 ```
