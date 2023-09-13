@@ -86,4 +86,9 @@ class Fortnox extends AbstractProvider
     protected function createResourceOwner(array $response, AccessToken $token)
     {
     }
+
+    protected function getAuthorizationHeaders($token = null)
+    {
+        return ['Authorization' => "Bearer {$token}"];
+    }
 }
